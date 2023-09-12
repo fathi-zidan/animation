@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: purple;
+
+}
+
+.container ::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    transition-property: width;
+    transition-duration: 3s;
+}
+
+.container:hover ::after {
+    width: 1px;
+}
